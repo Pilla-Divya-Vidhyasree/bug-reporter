@@ -18,55 +18,51 @@
         <div class="content">
             <h1 class="content1">BUG REPORTER</h1>
         </div>
-        <div class="bug-report form">
+        <div class="bug-report">
             <form action="">
                 <div class="head"><h1>Report your bugs here !!</h1></div>
                 <div class="form-content">
-                    <div class="form-labels">
-                        <div class="labels"><label for="bug">Select bug type : </label></div>
-                        <div class="labels"><label for="name">Name : </label></div>
-                        <div class="labels"><label for="name">Name : </label></div>
-                        <div class="labels"><label for="name">Name : </label></div>
+                    <div class="labels grid-label"><label for="bug">Select bug type : </label></div>
+                    <div class="inputs grid-tag">
+                        <select id="bug-type" name="bug">
+                            <option value="FB">Functional Bugs</option>
+                            <option value="PB">Performance Bug</option>
+                            <option value="UB">Usability Bugs</option>
+                            <option value="CB">Compatibility Bugs</option>
+                            <option value="ULB">Unit-Level Bugs</option>
+                            <option value="SB">Security Bugs</option>
+                            <option value="SYB">Syntax Bugs</option>
+                        </select>
                     </div>
-                    <div class="form-inputs">
-                        <div class="inputs">
-                            <select id="bug-type" name="bug">
-                                <option value="FB">Functional Bugs</option>
-                                <option value="PB">Performance Bug</option>
-                                <option value="UB">Usability Bugs</option>
-                                <option value="CB">Compatibility Bugs</option>
-                                <option value="ULB">Unit-Level Bugs</option>
-                                <option value="SB">Security Bugs</option>
-                                <option value="SYB">Syntax Bugs</option>
-                            </select>
-                        </div>
-                        <div class="inputs">
-                            <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          placeholder="enter your name"
-                        />
-                        </div>
-                        <div class="inputs">
-                            <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          placeholder="enter your name"
-                        />
-                        </div>
-                        <div class="inputs il">
-                            <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          placeholder="enter your name"
-                        />
-                        </div>
+                    <div class="labels grid-label"><label for="name">Name : </label></div>
+                    <div class="inputs grid-tag">
+                        <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="enter your name"
+                    />
+                    </div>
+                    <div class="labels grid-label"><label for="name">Name : </label></div>
+                    <div class="inputs grid-tag">
+                        <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="enter your name"
+                    />
+                    </div>
+                    <div class="labels grid-label"><label for="name">Name : </label></div>
+                    <div class="inputs il grid-tag">
+                        <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="enter your name"
+                    />
                     </div>
                 </div>
             </form>
@@ -105,9 +101,7 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 <link rel="stylesheet" href="styles.css">
-<script src="javascript.js"></script>
 </html>
